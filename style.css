@@ -51,63 +51,14 @@ body{
     box-shadow: 0 4px 8px 0px rgba(184, 181, 181, 0.2), 0 6px 20px 5px rgba(186, 186, 186, 0.19);
 }
 
-/* @media screen and (min-width:930px) and (max-width:1100px) {
-    .toDoList{
-        width: 43%;
-        left: 30%;
-    }
-    .mainInput{
-        width: 43%;
-        left: 30%;
-    }
-    .ulfooter{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-    #active{
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
-}
-
-@media screen and (min-width:900px) and (max-width:930px) {
-    .toDoList{
-        width: 44%;
-        left: 30%;
-    }
-    .mainInput{
-        width: 44%;
-        left: 30%;
-    }
-    .ulfooter{
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
-    }
-}
-
-@media screen and (min-width:830px) and (max-width:900px) {
-    .toDoList{
-        width: 45%;
-        left: 30%;
-    }
-    .mainInput{
-        width: 45%;
-        left: 30%;
-    }
-    .ulfooter{
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
-    }
-} */
-
 @media screen and (min-width:1200px) {
     .toDoList{
-        width: 43%;
-        left: 29%;
+        width: 39%;
+        left: 31%;
     }
     .mainInput{
-        width: 43%;
-        left: 29%;
+        width: 39%;
+        left: 31%;
     }
     .ulfooter{
         padding-left: 0.3rem;
@@ -210,6 +161,7 @@ body{
 }
 
 .toDoList ul li:hover i{
+    color: hsl(220, 4%, 59%) !important;
     display: block;
 }
 
@@ -276,167 +228,3 @@ body{
 }
 
 /* --------------------------------------dark Mood --------------------------------------------- */
-
-.backgroundImgDark{
-    background-image: url(./images/bg-desktop-dark.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-}
-
-.headDark{
-    position: absolute;
-    top: 8%;
-    left: 30%;
-    z-index: 3;
-    width: 39%;
-}
-
-.headDark button{
-    background-color: transparent;
-    border: none;
-}
-
-.mainInputDark{
-    position: absolute;
-    /* color:hsl(237, 14%, 26%); */
-    z-index: 3;
-    width: 38%;
-    top: 14%;
-    left: 31%;
-    box-sizing: border-box;
-    padding-top: 3rem;
-}
-
-.mainInputDark input{
-    background-color:  hsl(237, 14%, 26%);
-    border-color: hsl(237, 14%, 26%);
-}
-
-.toDoListDark{
-    position: absolute;
-    background-color:  hsl(235, 24%, 19%);
-    width: 38%;
-    top: 31%;
-    left: 31%;
-    z-index: 3;
-    border-radius: .3rem;
-    /* box-shadow: 0px 2px 10px rgb(194, 193, 193); */
-    box-shadow: 0 4px 8px 0px rgba(4, 4, 4, 0.304), 0 6px 20px 5px rgba(13, 12, 12, 0.459);
-}
-
-.toDoListDark ul{
-    padding-left: 0rem !important;
-}
-
-.toDoListDark ul li {
-    position: relative;
-    list-style: none;
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-between;
-    color: hsl(234, 39%, 85%);
-    /* z-index: 3; */
-    padding : .7rem 1.5rem .7rem 3rem;
-    font-family: 'Josefin Sans', sans-serif !important;
-    border-bottom: 1px solid hsl(230, 3%, 56%); 
-}
-
-.toDoListDark ul li button{
-    background-color: transparent;
-}
-
-.toDoListDark ul li input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    border-radius: 50%;
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-top: .6rem;
-    margin-left: 1rem;
-}
-
-.toDoListDark ul li button{
-    background-color: transparent !important;
-}
-
-.toDoListDark ul li button i{
-    color: hsl(231, 10%, 39%) !important;
-    font-size: 1.3rem;
-    /* background-color: transparent !important; */
-    display: none;
-}
-
-.toDoListDark ul li:hover button i{
-    display: block;
-}
-
-.checkmarkDark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 1.3rem;
-    width: 1.3rem;
-    border-radius: 50%;
-    border: 1px solid hsl(233, 11%, 84%);
-    background-color: transparent;
-    margin-left: 1rem !important;
-    margin-top: .7rem;
-}
-
-.toDoListDark ul li input:hover ~ .checkmarkDark{
-    border-color: rgba(135, 93, 234, 0.826);
-}
-
-.toDoListDark ul li input:checked ~ .checkmarkDark {
-    /* background-color: #2196F3; */
-    background-image: linear-gradient(  135deg ,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
-}
-
-.toDoListDark ul li input:checked ~ .textDark {
-    color: hsl(234, 11%, 52%) !important;
-    text-decoration: line-through;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmarkDark::after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-.toDoListDark ul li input:checked ~ .checkmarkDark::after {
-    display: block;
-}
-
-.toDoListDark ul li .checkmarkDark::after {  /* NEW AMD IMPORTANT */
-    left: 7px;
-    top: 4px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.ulfooterDark p{
-    cursor: pointer;
-    color: hsl(234, 11%, 52%);
-    font-size: .9rem;
-    font-weight: 600 !important;
-}
-
-.ulfooterDark p:hover {
-    color: hsl(236, 33%, 92%);
-}
-
-/* .drag{
-    color: ;
-} */
