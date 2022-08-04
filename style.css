@@ -155,7 +155,7 @@ body{
 }
 
 .toDoList ul li i{
-    color: hsl(220, 4%, 59%) !important;
+    color: hsl(220, 4%, 59%) ;
     font-size: 1.3rem;
     display: none;
 }
