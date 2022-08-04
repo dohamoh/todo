@@ -109,17 +109,29 @@ body{
 }
 @media screen and (max-width:600px)  {
     .toDoList{
-        width: 70%;
-        left: 15%;
+        top: -3%;
+        width: 95%;
+        left: 3%;
     }
     .mainInput{
-        width: 70%;
-        left: 15%;
+        top: 22%;
+        width: 95%;
+        left: 3%;
+    }
+    #head{
+        /* top: 20%; */
+        width: 90%;
+        left: 6%;
+        top: 20%;
+        justify-content: space-between;
+    }
+    #head button{
+        margin-bottom: 1rem;
     }
     .ulfooter{
         padding-left: 0.3rem;
         padding-right: 0.3rem;
-        padding-top: 0.5rem
+        padding-top: 0.4rem
     }
 }
 
