@@ -161,8 +161,8 @@ body{
 }
 
 .toDoList ul li:hover i{
-    color: hsl(220, 4%, 59%) !important;
-    display: block;
+    /* color: hsl(220, 4%, 59%) !important; */
+    display: block !important;
 }
 
 .checkmark {
