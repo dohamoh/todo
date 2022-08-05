@@ -23,7 +23,7 @@ let completed = document.getElementById("completed");
 let toDoStatus = "all";
 let clearCompleted = document.getElementById("clearCompleted");
 let drag = document.getElementById("drag");
-let inputVali = document.getElementById("inputVali");
+// let inputVali = document.getElementById("inputVali");
 let toDoListLi = document.getElementById("toDoListLi");
 // --------------------------------------------------------
 
@@ -87,8 +87,8 @@ mainInput.addEventListener("focusout", function addToDo() {
     clearInput();
   } else {
     console.log("ahahahaha");
-    toDoListMainDiv.style.top = "-4%";
-    inputVali.classList.remove("d-none");
+    // toDoListMainDiv.style.top = "-4%";
+    // inputVali.classList.remove("d-none");
   }
 });
 
@@ -183,11 +183,11 @@ function itemsLeft() {
 //   e.target.appendChild(draggable);
 // }
 
-function reorder() {
-  new Sortable(toDoListDisplay);
-  setInStorage()
-  // displayToDo()
-}
+// function reorder() {
+//   new Sortable(toDoListDisplay);
+//   setInStorage()
+//   displayToDo()
+// }
 //------------------------------------------------------------
 function displayToDo() {
   var cartona = ``;
