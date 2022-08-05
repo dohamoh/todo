@@ -197,7 +197,7 @@ function displayToDo() {
             <input onclick="check(${i})" class = "checkbox" type="checkbox" checked >
             <span class="checkmark"></span>
             <span id = "text" class = "text">${toDoList[i].todosub}</span>
-            <button class=" border-0 bg-transparent fw-lighter" onclick = "deleteToDo(${i})"><i class="fa-solid fa-x"></i></button>
+            <button class=" border-0 bg-transparent fw-lighter" onclick = "deleteToDo(${i})"><i class="fa-solid fa-x">x</i></button>
             </li>`;
     }
 
@@ -206,7 +206,7 @@ function displayToDo() {
             <input onclick="check(${i})" class = "checkbox" type="checkbox" >
             <span class="checkmark"></span>
             <span id = "text" class = "text">${toDoList[i].todosub}</span>
-            <button class=" border-0 text-info bg-transparent fw-lighter" onclick = "deleteToDo(${i})"><i class="fa-solid fa-x"></i></button>
+            <button class=" border-0 text-info bg-transparent fw-lighter" onclick = "deleteToDo(${i})"><i class="fa-solid fa-x">x</i></button>
             </li>`;
     }
   }
