@@ -20,11 +20,14 @@ let toLightMoodBtn = document.getElementById("toLightMoodBtn");
 let all = document.getElementById("all");
 let active = document.getElementById("active");
 let completed = document.getElementById("completed");
+let all2 = document.getElementById("all2");
+let active2 = document.getElementById("active2");
+let completed2 = document.getElementById("completed2");
 let toDoStatus = "all";
 let clearCompleted = document.getElementById("clearCompleted");
 let drag = document.getElementById("drag");
-// let inputVali = document.getElementById("inputVali");
 let toDoListLi = document.getElementById("toDoListLi");
+let ulfooter2 = document.getElementById("ulfooter2")
 // --------------------------------------------------------
 
 if (localStorage.getItem("toDoList") != null) {
@@ -45,10 +48,12 @@ toLightMoodBtn.addEventListener("click", function () {
   mainInput.style.backgroundColor = "white";
   mainInput.style.borderColor = "white";
   mainInput.style.color = "black";
+  ulfooter2.style.backgroundColor = "white";
+  ulfooter2.style.color = "black";
   toDoListMainDiv.style.color = "hsl(235, 19%, 35%)";
   toDoListMainDiv.style.backgroundColor = "white";
-  toDoListMainDiv.style.boxShadow =
-    "0 4px 8px 0px rgba(184, 181, 181, 0.2), 0 6px 20px 5px rgba(186, 186, 186, 0.19)";
+  toDoListMainDiv.style.boxShadow = "0 4px 8px 0px rgba(184, 181, 181, 0.2), 0 6px 20px 5px rgba(186, 186, 186, 0.19)";
+  ulfooter2.style.boxShadow = "0 4px 8px 0px rgba(184, 181, 181, 0.2), 0 6px 20px 5px rgba(186, 186, 186, 0.19)";
   attribution.style.color = "black";
   drag.style.color = "hsl(236, 9%, 61%)";
 });
@@ -63,12 +68,13 @@ toDarkMoodBtn.addEventListener("click", function () {
   mainInput.style.borderColor = "hsl(237, 14%, 26%)";
   mainInput.style.color = "white";
   toDoListMainDiv.style.color = "hsl(234, 39%, 85%)";
+  ulfooter2.style.color = "hsl(234, 39%, 85%)";
   toDoListMainDiv.style.backgroundColor = "hsl(235, 24%, 19%)";
-  toDoListMainDiv.style.boxShadow =
-    "0 4px 8px 0px rgba(4, 4, 4, 0.304), 0 6px 20px 5px rgba(13, 12, 12, 0.459)";
+  ulfooter2.style.backgroundColor = "hsl(235, 24%, 19%)";
+  toDoListMainDiv.style.boxShadow = "0 4px 8px 0px rgba(4, 4, 4, 0.304), 0 6px 20px 5px rgba(13, 12, 12, 0.459)";
+  ulfooter2.style.boxShadow = "0 4px 8px 0px rgba(4, 4, 4, 0.304), 0 6px 20px 5px rgba(13, 12, 12, 0.459)";
   attribution.style.color = "white";
   drag.style.color = "hsl(234, 11%, 52%)";
-  // ulFooter.style.color = "hsl(234, 11%, 52%)"
 });
 
 // -----------------------------------------------------------
@@ -87,8 +93,6 @@ mainInput.addEventListener("focusout", function addToDo() {
     clearInput();
   } else {
     console.log("ahahahaha");
-    // toDoListMainDiv.style.top = "-4%";
-    // inputVali.classList.remove("d-none");
   }
 });
 
@@ -115,6 +119,13 @@ all.addEventListener("click", function allToDo() {
   completed.style.color = "hsl(236, 9%, 61%)";
   displayToDo();
 });
+all2.addEventListener("click", function allToDo() {
+  toDoStatus = "all";
+  all2.style.color = "hsl(220, 98%, 61%)";
+  active2.style.color = "hsl(236, 9%, 61%)";
+  completed2.style.color = "hsl(236, 9%, 61%)";
+  displayToDo();
+});
 
 active.addEventListener("click", function activeToDo() {
   toDoStatus = "active";
@@ -123,12 +134,26 @@ active.addEventListener("click", function activeToDo() {
   completed.style.color = "hsl(236, 9%, 61%)";
   displayToDo();
 });
+active2.addEventListener("click", function activeToDo() {
+  toDoStatus = "active";
+  active2.style.color = "hsl(220, 98%, 61%)";
+  all2.style.color = "hsl(236, 9%, 61%)";
+  completed2.style.color = "hsl(236, 9%, 61%)";
+  displayToDo();
+});
 
 completed.addEventListener("click", function completedToDo() {
   toDoStatus = "completed";
   completed.style.color = "hsl(220, 98%, 61%)";
   active.style.color = "hsl(236, 9%, 61%)";
   all.style.color = "hsl(236, 9%, 61%)";
+  displayToDo();
+});
+completed2.addEventListener("click", function completedToDo() {
+  toDoStatus = "completed";
+  completed2.style.color = "hsl(220, 98%, 61%)";
+  active2.style.color = "hsl(236, 9%, 61%)";
+  all2.style.color = "hsl(236, 9%, 61%)";
   displayToDo();
 });
 //------------------------------------------------------------

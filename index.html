@@ -42,7 +42,6 @@
       </div>
 
       <div class="mainInput flex-column input-group input-group-lg mb-3">
-        <!-- <p id="inputVali" class="text-warning mb-3 rounded d-none">** you need to type a valid to do!!</p> -->
         <input
           id="mainInput"
           type="text"
@@ -63,18 +62,27 @@
         <button class=" fw-lighter text-info border-0 bg-transparent "><i class="fa-solid fa-x"></i></button>  -->
       <!-- </li> -->
         </ul>
-        <div class="ulfooter d-flex justify-content-around align-items-center pt-md-3" id="ulFooter">
-          <p id="itemsLeft" class="me-md-3"></p>
+        <div class="ulfooter d-flex justify-content-between px-4 align-items-center pt-md-3" id="ulFooter">
+          <p id="itemsLeft" class=""></p>
+        <div class="aac d-flex justify-content-around align-items-center">
           <p id="all" class="ms-3">All</p>
-          <p id="active" class="">Active</p>
+          <p id="active" class="mx-4">Active</p>
           <p id="completed" class="me-3">Completed</p>
-          <p id="clearCompleted" class="ms-3">Clear Completed</p>
+        </div>
+          <p id="clearCompleted" class="">Clear Completed</p>
         </div>
       </div>
-      
-      <div id="drag" class=" text-center opacity-75">
-        <h6>Drag and drog to reorder</h6>
+
+      <div id="ulfooter2" class="ulfooter2 d-flex pt-3 px-4 mb-5 mx-auto justify-content-center align-items-center d-none">
+        <p id="all2" class="ms-3">All</p>
+        <p id="active2" class="mx-3">Active</p>
+        <p id="completed2" class="me-3">Completed</p>
       </div>
+
+      <!-- <div id="drag" class=" text-center opacity-75">
+        <h6>Drag and drog to reorder</h6>
+      </div> -->
+      
       <div id="attribution" class=" text-center mt-5 attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -83,63 +91,6 @@
       </div>
     </div>
 
-    <!-- --------------------------------------------- dark mood ---------------------------------------------------- -->
-
-    <!-- <div class="darkMood d-none" id="darkMood">
-      <div class="backgroundImgDark"></div>
-
-      <div class="headDark" id="headDark">
-        <div class="d-flex justify-content-between">
-          <h1 class="ms-md-3 text-white fw-bold">T O D O</h1>
-          <button id="toLightMoodBtn">
-            <img src="./images/icon-sun.svg" alt="" />
-          </button>
-        </div>
-      </div>
-
-      <div class="mainInputDark input-group input-group-lg mb-3">
-        <input
-          type="text"
-          id="mainInputDark"
-          class="form-control ps-4"
-          placeholder="Create a new todo"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-lg"
-        />
-      </div>
-
-      <div class="toDoListDark d-flex flex-column pt-2" >
-        <ul class="w-100 mb-0" id="toDoListDisplayDark">
-          <li>
-        <input type="checkbox">
-        <span class="checkmarkDark"></span>
-        <span class="textDark">take therapy sesion</span>
-        <button class=" border-0"><i class="fa-solid fa-x "></i></button>
-      </li>
-        </ul>
-
-        <div
-          class="ulfooterDark d-flex justify-content-around align-items-center py-md-2"
-          id="ulFooter"
-        >
-          Add dynamic number// 
-          <p class="me-md-3">3 items left</p>
-          <p class="ms-3">All</p>
-          <p class="">Active</p>
-          <p class="me-3">Completed</p>
-          <p class="ms-3">Clear Completed</p>
-        </div>
-      </div>
-
-      <div class="attribution text-white">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
-    </div>
-
-    ----------------------------------------------------------------------------- -->
 
     <script src="./bootstrap-5.1.3-dist (1)/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
