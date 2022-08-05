@@ -55,10 +55,12 @@ body{
     .toDoList{
         width: 39%;
         left: 31%;
+        top: -3%;
     }
     .mainInput{
         width: 39%;
         left: 31%;
+        top: 20%;
     }
     .ulfooter{
         padding-left: 0.3rem;
@@ -69,10 +71,17 @@ body{
     .toDoList{
         width: 43%;
         left: 30%;
+        top: -4%;
+    }
+    #head{
+        width: 45%;
+        left: 28%;
+        top: 12%;
     }
     .mainInput{
         width: 43%;
         left: 30%;
+        top: 17%;
     }
     .ulfooter{
         padding-left: 0.5rem;
@@ -89,7 +98,12 @@ body{
     .mainInput{
         width: 50%;
         left: 25%;
-        top: 13%;
+        top: 29%;
+    }
+    #head{
+        width: 51%;
+        left: 23%;
+        top: 25%;
     }
     .ulfooter{
         padding-left: 0.3rem;
@@ -105,10 +119,12 @@ body{
     #head{
         width: 55%;
         left: 20%;
+        top: 20%;
     }
     .mainInput{
         width: 60%;
         left: 20%;
+        top: 23%;
     }
     .ulfooter{
         padding-left: 0.3rem;
@@ -186,13 +202,13 @@ body{
 .toDoList ul li i{
     color: hsl(220, 4%, 59%) ;
     font-size: 1.3rem;
-    display: none;
+    display: block;
 }
 
-.toDoList ul li:hover i{
-    /* color: hsl(220, 4%, 59%) !important; */
+/* .toDoList ul li:hover i{
+    color: hsl(220, 4%, 59%) !important;
     display: block !important;
-}
+} */
 
 .checkmark {
     position: absolute;
